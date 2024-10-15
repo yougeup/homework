@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>join02</title>
+    <link rel="stylesheet" href="./join02.css">
+    <script defer src="./join02.js"></script>
+</head>
+<body>
+    
+
+    <div id="main">
+        <div>
+            <div>
+                <div><img src="/frontspace/resources/img/G-logo.png" alt=""></div>
+                <div>기본 정보</div>
+                <div>생일과 성별을 입력하세요.</div>
+            </div>
+            <div>
+                <input type="date" placeholder=" 성" id="inputFamilyName">
+                <form id="genderForm">
+                    <div class="gender-option">
+                        <input type="radio" id="male" name="gender" value="남성">
+                        <label for="male">남성</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="female" name="gender" value="여성">
+                        <label for="female">여성</label>
+                    </div>
+                    <div class="gender-option">
+                        <input type="radio" id="other" name="gender" value="기타">
+                        <label for="other">기타</label>
+                    </div>
+            
+                    <button type="button" id="submitBtn">제출</button>
+                </form>
+                <div><button id="btn02" onclick="daum();">다음</button></div>
+               
+            </div>
+        </div>
+        <div>
+            <div>한국어</div>
+            <div></div>
+            <div>도움말</div>
+            <div>개인정보처리방침</div>
+            <div>약관</div>
+        </div>
+    </div>
+
+
+</body>
+</html>

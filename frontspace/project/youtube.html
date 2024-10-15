@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>youtube</title>
+    <link rel="stylesheet" href="/frontspace/project/youtube.css">
+    <script defer src="./youtube.js"></script>
+</head>
+
+<body>
+
+    <div id="outer">
+        <div id="logo-area">
+            <div><img id="a" src="/frontspace/resources/img/menu-bar.png" alt="menuBar"></div>
+            <div><button id="logoBtn" onclick="f03();"><img src="/frontspace/resources/img/YouTubeLogo.png" alt=""></button></div>
+        </div>
+
+        <div>
+            <div></div>
+            <div><input type="text" placeholder="검색" id="search"></div>
+            <div> <button onclick="f02()" id="searchBtn"><img src="/frontspace/resources/img/searchImg.png" alt=""></button></div>
+            <div><img src="/frontspace/resources/img/mike.png" alt=""></div>
+            <div></div>
+            <div>⁞</div>
+            <div><button id="loginBtn01" onclick="f01();"><img src="/frontspace/resources/img/login.png" alt="" id="x"></button></div>
+        </div>
+        <div id="menu-area">
+            <div>
+                <div><img src="/frontspace/resources/img/home.png" alt=""></div>
+                <div id="home">홈</div>
+                <div><img src="/frontspace/resources/img/short1.png" alt=""></div>
+                <div>쇼츠</div>
+                <div><img src="/frontspace/resources/img/subscribe.png" alt=""></div>
+                <div>구독</div>
+            </div>
+            <div>
+                <div><img src="/frontspace/resources/img/myPage.png" alt="">️</div>
+                <div>내 페이지</div>
+                <div><img src="/frontspace/resources/img/watchLog.png" alt=""></div>
+                <div>시청 기록</div>
+            </div>
+            <div>
+                <div><p>로그인하면 동영상에 좋아요
+                        를 표시하고 댓글을 달거나
+                        구독할 수 있습니다.
+                </p></div>
+                <div>
+                    <button id="loginBtn01" onclick="f01();"><img src="/frontspace/resources/img/login.png" alt="" id="x"></button>
+                </div>
+            </div>
+            <div>탐색</div>
+            <div id="serch-menu">
+                <div><img src="/frontspace/resources/img/trending.png" alt=""></div>
+                <div>인기 급상승</div>
+                <div><img src="/frontspace/resources/img/shopping.png" alt=""></div>
+                <div>쇼핑</div>
+                <div><img src="/frontspace/resources/img/music.png" alt=""></div>
+                <div>음악</div>
+                <div><img src="/frontspace/resources/img/movie.png" alt=""></div>
+                <div>영화</div>
+                <div><img src="/frontspace/resources/img/live.png" alt=""></div>
+                <div>실시간</div>
+                <div><img src="/frontspace/resources/img/game.png" alt=""></div>
+                <div>게임</div>
+                <div><img src="/frontspace/resources/img/sports.png" alt=""></div>
+                <div>스포츠</div>
+                <div><img src="/frontspace/resources/img/education.png" alt=""></div>
+                <div>학습 프로그램</div>
+                <div><img src="/frontspace/resources/img/potcast.png" alt=""></div>
+                <div>팟캐스트</div>
+            </div>
+            <div>YouTube 더보기</div>
+            <div>
+                <div><img src="/frontspace/resources/img/premium.png" alt=""></div>
+                <div>YouTube Premium</div>
+                <div><img src="/frontspace/resources/img/YouTubeMusic.png" alt=""></div>
+                <div>YouTube Music</div>
+                <div><img src="/frontspace/resources/img/YouTubeKids.png" alt=""></div>
+                <div>YouTube Kids</div>
+            </div>
+            <div>
+                <div><img src="/frontspace/resources/img/setting.png" alt=""></div>
+                <div>설정</div>
+                <div><img src="/frontspace/resources/img/report.png" alt=""></div>
+                <div>신고 기록</div>
+                <div><img src="/frontspace/resources/img/center.png" alt=""></div>
+                <div>고객센터</div>
+                <div><img src="/frontspace/resources/img/messeage.png" alt=""></div>
+                <div>의견 보내기</div>
+
+            </div>
+            <div>
+                <p> 정보 보도자료 저작권
+                    문의하기 크리에이터 광고
+                    개발자
+                    
+                    약관 개인정보처리방침
+                    정책 및 안전
+                    YouTube 작동의 원리
+                    새로운 기능 테스트하기
+                    
+                    © 2024 Google LLC, Sundar Pichai,
+                    1600 Amphitheatre Parkway, 
+                    Mountain View CA 94043, USA, 
+                    0807-882-594 (무료), yt-support-
+                    solutions-kr@google.com, 호스팅: 
+                    Google LLC, 사업자정보, 불법촬영물 
+                    신고
+                    크리에이터들이 유튜브 상에 게시, 
+                    태그 또는 추천한 상품들은 판매자들
+                    의 약관에 따라 판매됩니다. 유튜브
+                    는 이러한 제품들을 판매하지 않으
+                    며, 그에 대한 책임을 지지 않습니다.
+                </p>
+            </div>
+        </div>
+        <div id="video-area">
+            <div id="video-category-area">
+                <button>전체</button>
+                <button>게임</button>
+                <button>요리</button>
+                <button>골프</button>
+                <button>등산</button>
+                <button>예능</button>
+                <button>뮤직</button>
+                <button>기타</button>    
+            </div>
+            <div id="video-main-area">
+                <div>
+                    <div><a href="https://youtu.be/qbqquv_8wM0?si=EwMzwilSLuQ-ofwC">
+                        <img src="/frontspace/resources/img/Thumbnail1.png" width="90%" height="90%" alt="">
+                    </a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail1Logo.png" alt=""></div>
+                        <div>
+                            <a href="https://youtu.be/qbqquv_8wM0?si=EwMzwilSLuQ-ofwC">
+                            [sub]성시경의 먹을텐데 | 신림동 전라도시네마
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/utIbM9Iua-k?si=VsvCSJmwg-51ldfn">
+                        <img src="/frontspace/resources/img/Thumbnail2.png" width="90%" height="90%" alt="">
+                    </a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail2Logo.png" alt="">
+                        </div>
+                        <div><a href="https://youtu.be/utIbM9Iua-k?si=VsvCSJmwg-51ldfn">
+                            흑백요리사 얘기할 건데 퍼트리면 안 된다</a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/aGKKIr73sWs?si=nq5szmMmuSnXiSBq">
+                        <img src="/frontspace/resources/img/Thumbnail3.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail3Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/aGKKIr73sWs?si=nq5szmMmuSnXiSBq">
+                            안양역 앞 안양일번가 땅속에서 무슨 일이? (월곶~판교 복선전철) | [레일메이트] 전차라떼
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/LKu-Qi9Jw2w?si=rj6ZOURaIguD3Hah">
+                        <img src="/frontspace/resources/img/Thumbnail4.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail4Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/LKu-Qi9Jw2w?si=rj6ZOURaIguD3Hah">
+                            𝐏𝐥𝐚𝐲𝐥𝐢𝐬𝐭 질리도록 듣는 히트곡엔 그 이유가 있다 Ver2 𝐅𝐞𝐚𝐭. 𝐋𝐚𝐮𝐯, 𝐋𝐚𝐧𝐲, 𝐇𝐨𝐧𝐧𝐞, 𝐤𝐞𝐬𝐡𝐢, 𝐓𝐫𝐨𝐲𝐞 𝐒𝐢𝐯𝐚𝐧, 𝐂𝐡𝐚𝐫𝐥𝐢𝐞 𝐏𝐮𝐭𝐡
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/kON6tRxlZPs?si=agDf_zYAFNw8HMwP">
+                        <img src="/frontspace/resources/img/Thumbnail5.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail5Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/kON6tRxlZPs?si=agDf_zYAFNw8HMwP">
+                            일할 때 듣기좋은 외국영화 OST 피아노 10시간 모음🎥 l 10Hours of Relaxing Piano (공부, 집중, 일, 힐링, 매장, 카페음악)
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/L1jvaonMSsY?si=GdJuaaiLgN446QM7">
+                        <img src="/frontspace/resources/img/Thumbnail6.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail6Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/L1jvaonMSsY?si=GdJuaaiLgN446QM7">
+                            흑백요리사 셰프들 직접 등판👨‍🍳 여러분의 댓글과 반응을 읽어봤습니다 | 흑백요리사: 요리 계급 전쟁 | 넷플릭스
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/1BJVghJsLQ8?si=MzJHmL3crlbc6zIK">
+                        <img src="/frontspace/resources/img/Thumbnail7.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail7Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/1BJVghJsLQ8?si=MzJHmL3crlbc6zIK">
+                            SNL 코리아 시즌 6 | 문상훈 편 하이라이트 | 동호회의 목적 | 쿠팡플레이 | 쿠팡
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/TZ7w9Ph3tx4?si=FCAhPNq12xBFaRr7">
+                        <img src="/frontspace/resources/img/Thumbnail8.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail8Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/TZ7w9Ph3tx4?si=FCAhPNq12xBFaRr7">
+                            짬에서 나온 바이브
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/1G_A9DnKSVY?si=_LYEu4l2oojPvhPw">
+                        <img src="/frontspace/resources/img/Thumbnail9.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail9Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/1G_A9DnKSVY?si=_LYEu4l2oojPvhPw">
+                            사과해요 나한테
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/Vn_I45B2Eww?si=2fjY9Yt7HYiAj3Yu">
+                        <img src="/frontspace/resources/img/Thumbnail10.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail10Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/Vn_I45B2Eww?si=2fjY9Yt7HYiAj3Yu">
+                            진짜 웃다 뒤질 뻔한 비빔대왕님 ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                
+            </div>
+            <div id="short-logo-area">
+                <div><img src="/frontspace/resources/img/short.png" alt=""></div>
+                <div>short</div>
+                <div>1</div>
+            </div>
+            <div id="video-short-area">
+                <div>
+                    <div><a href="https://youtube.com/shorts/Pg8CZ3pYUsI?si=BWgDxkzhOnj0vwcU">
+                        <img src="/frontspace/resources/img/shortThumbnail01.png" width="90%" height="90%" alt="">
+                    </a></div>
+                    <div>
+                        <div class="short-title"><a href="https://youtube.com/shorts/Pg8CZ3pYUsI?si=BWgDxkzhOnj0vwcU">
+                            오빠 전 여친 얘기해줘
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtube.com/shorts/o1ib5YDfl9k?si=Cgspqv1BQh7PF6ae">
+                        <img src="/frontspace/resources/img/shortThumbnail02.png" width="90%" height="90%" alt="">
+                    </a></div>
+                    <div>
+                        <div class="short-title"><a href="https://youtube.com/shorts/o1ib5YDfl9k?si=Cgspqv1BQh7PF6ae">
+                            중소기업 6,000원 급식
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtube.com/shorts/zWyI86YP0s8?si=ckv7FqNH-rN4rg6n">
+                        <img src="/frontspace/resources/img/shortThumbnail03.png" width="90%" height="90%" alt="">
+                    </a></div>
+                    <div>
+                        <div class="short-title"><a href="https://youtube.com/shorts/zWyI86YP0s8?si=ckv7FqNH-rN4rg6n">
+                            분식집 라면 맛이 다른 진짜 이유
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtube.com/shorts/bl_Wt0cMvfE?si=2UVrNNIoqlYh6Tfs">
+                        <img src="/frontspace/resources/img/shortThumbnail04.png" width="90%" height="90%" alt="">
+                    </a></div>
+                    <div>
+                        <div class="short-title"><a href="https://youtube.com/shorts/bl_Wt0cMvfE?si=2UVrNNIoqlYh6Tfs">
+                            단돈 1,400원으로 미국가는 방법
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtube.com/shorts/YQPhZlEcq3E?si=luTRT4o9UqfYLnq7">
+                        <img src="/frontspace/resources/img/shortThumbnail05.png" width="90%" height="90%" alt="">
+                    </a></div>
+                    <div>
+                        <div class="short-title"><a href="https://youtube.com/shorts/YQPhZlEcq3E?si=luTRT4o9UqfYLnq7">
+                            비계보다 살코기가 많으면 논란이되는 부위?!
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtube.com/shorts/z8zp25tiEyk?si=tVcRRGwPz3AO81GW">
+                        <img src="/frontspace/resources/img/shortThumbnail06.png" width="90%" height="90%" alt="">
+                    </a></div>
+                    <div>
+                        <div><a href="https://youtube.com/shorts/z8zp25tiEyk?si=tVcRRGwPz3AO81GW">
+                            올해 먹었던 면요리 중 신세계
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="video-main2-area">
+                <div>
+                    <div><a href="https://youtu.be/4muw6SkiAv8?si=C4ielRQlD780LHWX">
+                        <img src="/frontspace/resources/img/Thumbnail11.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail11Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/4muw6SkiAv8?si=C4ielRQlD780LHWX">
+                            가족끼리 그러는거 아니야
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/5HaKm3ewMNw?si=23oK5eJdDcmigYC6">
+                        <img src="/frontspace/resources/img/Thumbnail12.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail12Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/5HaKm3ewMNw?si=23oK5eJdDcmigYC6">
+                            사건의 지평선 vs 풍선! 윤하가 최대 성량으로 지를 때까지 도발하는 토크쇼 | 딱대 EP16 윤하
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/0VUu0RqXpK4?si=LBqE3mKqT0vOrvkz">
+                        <img src="/frontspace/resources/img/Thumbnail13.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail13Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/0VUu0RqXpK4?si=LBqE3mKqT0vOrvkz">
+                            흑백요리사 안성재 셰프님의 미슐랭 3스타⭐⭐⭐ 모수 서울에 다녀왔습니다!!✌️
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/tjqvwBOc2nQ?si=aGE_0V8uETMMee03">
+                        <img src="/frontspace/resources/img/Thumbnail14.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail14Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/tjqvwBOc2nQ?si=aGE_0V8uETMMee03">
+                            왜 오빠 계정에 에스파가 나와?
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/l3RPHqo-g3E?si=FBaleCL06aD2ZuLT">
+                        <img src="/frontspace/resources/img/Thumbnail15.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail15Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/l3RPHqo-g3E?si=FBaleCL06aD2ZuLT">
+                            문과가 세상을 구한다
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div>인기급상승</div>
+            </div>
+            <div id="trending-video-area">
+                
+                <div>
+                    <div><a href="https://youtu.be/Ej4FHQhkov8?si=w_G1QIcBOQHiMbsy">
+                        <img src="/frontspace/resources/img/Thumbnail16.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail16Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/Ej4FHQhkov8?si=w_G1QIcBOQHiMbsy">
+                            저한테 관심 있으세요?
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/sjYFlm-5INc?si=af4t7Lfa2SXt5CMV">
+                        <img src="/frontspace/resources/img/Thumbnail17.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail17Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/sjYFlm-5INc?si=af4t7Lfa2SXt5CMV">
+                            새엄마 만들어 줘 아빠..
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/3vCjApmNLKY?si=ytM3BkRtsnldIYML">
+                        <img src="/frontspace/resources/img/Thumbnail18.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail18Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/3vCjApmNLKY?si=ytM3BkRtsnldIYML">
+                            니 남친 뺏어두 돼?
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/3IhrIS--bCY?si=Ign2Ay0zQJljw9-x">
+                        <img src="/frontspace/resources/img/Thumbnail19.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail19Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/3IhrIS--bCY?si=Ign2Ay0zQJljw9-x">
+                            유우리 - 베텔기우스 [ベテルギウス]🎵"저 가수입니다🎤" by강남
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                <div>
+                    <div><a href="https://youtu.be/pUzykWy6saE?si=Omc5q82iiGQM3SbM">
+                        <img src="/frontspace/resources/img/Thumbnail20.png" width="90%" height="90%" alt=""></a></div>
+                    <div>
+                        <div><img src="/frontspace/resources/img/Thumbnail20Logo.png" alt=""></div>
+                        <div><a href="https://youtu.be/pUzykWy6saE?si=Omc5q82iiGQM3SbM">
+                            누구나 바라는 인생 l 〈지족〉 EP.1
+                        </a></div>
+                        <div>⁞</div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

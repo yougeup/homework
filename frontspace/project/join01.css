@@ -1,0 +1,92 @@
+body{
+    background-color: rgb(240, 244, 249);
+}
+#main{
+    display: grid;
+    grid-template: 400px 40px / 1fr;
+    width: 940px;
+    height: 440px;
+    margin-left: 27%;
+    margin-top: 14%;
+}
+#main > div:nth-child(1){
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+    background-color: white;
+    border-radius: 30px;
+}
+#main > div:nth-child(1) > div:nth-child(1){
+    display: grid;
+    grid-template: 0.5fr 0.5fr 2fr / 1fr;
+}
+#main > div:nth-child(1) > div:nth-child(2){
+    display: grid;
+    grid-template: 2fr 1fr 1fr / 1fr;
+}
+
+#main > div:nth-child(2){
+    display: grid;
+    grid-template: 1fr / 3fr 10fr 2fr 3fr 1fr;
+}
+#main > div:nth-child(1) > div:nth-child(1) > div:nth-child(2){
+    font-size: 2em;
+    padding-top: 3%;
+    padding-left: 9%;
+}
+#main > div:nth-child(1) > div:nth-child(1) > div:nth-child(1){
+    margin-top: 40px;
+    margin-left: 40px;
+}
+#main > div:nth-child(1) > div:nth-child(1) > div:nth-child(3){
+    padding-top: 3%;
+    padding-left: 9%;
+}
+#inputFamilyName{
+    height: 25%;
+    width: 90%;
+    border-radius: 7px;
+    font-size: 1.2em;
+    border: 2px solid lightgray;
+    margin-top: 135px;
+    
+}
+#inputName{
+    height: 50%;
+    width: 90%;
+    border-radius: 7px;
+    font-size: 1.2em;
+    border: 2px solid lightgray;
+    margin-top: 100px;
+    margin-top: 10px;
+}
+
+#main > div:nth-child(1) > div:nth-child(2) > div:nth-child(3){
+    font-size: 0.89em;
+    margin-top: 35px;
+}
+#main > div:nth-child(1) > div:nth-child(2) > div:nth-child(4){
+    margin-top: 80px;
+    place-items: center right;
+}
+#btn01{
+    border: 0px solid white;
+    background-color: white;
+    font-size: 1em;
+    color: blue;
+    border-radius: 42px;
+}
+#btn01:hover{
+    background-color: lightgray;
+    width: 100%;
+    height: 250%;
+}
+#btn02{
+    margin-left: 370px;
+    margin-bottom: 20px;
+    background-color: blue;
+    color: white;
+    border-radius: 30px;
+    height: 40px;
+    width: 70px;
+    
+}
